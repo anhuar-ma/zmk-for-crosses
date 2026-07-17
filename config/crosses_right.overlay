@@ -11,7 +11,7 @@
 
     trackball_listener {
         raise_arrow_layer {
-            layers = <2>; /* SYM layer */
+            layers = <3>; /* SYM layer is now layer 3 */
             input-processors = <&trackball_keybinds>;
         };
     };
