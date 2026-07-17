@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <input/processors.dtsi>
 
-##define BASE   0
+#define BASE   0
 #define QWERTY 1
 #define NAV    2
 #define SYM    3
