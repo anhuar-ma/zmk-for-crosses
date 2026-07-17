@@ -4,16 +4,27 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: HeeTuic  
-      url-base: https://github.com/HeeTuic    
+    - name: HeeTuic
+      url-base: https://github.com/HeeTuic
+    - name: zettaface
+      url-base: https://github.com/zettaface
+    - name: anhuar-ma
+      url-base: https://github.com/anhuar-ma
   projects:
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
+    #   import: app/west.yml
     - name: zmk
-      remote: zmkfirmware
-      revision: ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
+      remote: anhuar-ma
+      revision: v0.3-branch
       import: app/west.yml
     - name: cb-zmk-keebs
       remote: HeeTuic
       revision: zephyr-4.1
       import: config/west.yml
+    - name: zmk-input-processor-keybind
+      remote: zettaface
+      revision: main
   self:
     path: config
