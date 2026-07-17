@@ -8,11 +8,11 @@
         mode = <1>;
         bindings = <&kp UP>, <&kp DOWN>, <&kp LEFT>, <&kp RIGHT>;
     };
-};
 
-&trackball_listener {
-    raise_arrow_layer {
-        layers = <2>; /* SYM layer */
-        input-processors = <&trackball_keybinds>;
+    trackball_listener {
+        raise_arrow_layer {
+            layers = <2>; /* SYM layer */
+            input-processors = <&trackball_keybinds>;
+        };
     };
 };
