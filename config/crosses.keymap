@@ -172,12 +172,6 @@
         };
     };
 
-    trackball_keybinds: trackball_keybinds {
-        compatible = "zettaface,input-processor-keybind";
-        #input-processor-cells = <0>;
-        mode = <1>;
-        bindings = <&kp UP>, <&kp DOWN>, <&kp LEFT>, <&kp RIGHT>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -250,10 +244,4 @@
     };
 };
 
-&trackball_listener {
-    raise_arrow_layer {
-        layers = <SYM>;
-        input-processors = <&trackball_keybinds>;
-    };
-};
 

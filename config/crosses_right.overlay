@@ -1,0 +1,18 @@
+#include <dt-bindings/zmk/keys.h>
+#include <input/processors.dtsi>
+
+/ {
+    trackball_keybinds: trackball_keybinds {
+        compatible = "zettaface,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;
+        bindings = <&kp UP>, <&kp DOWN>, <&kp LEFT>, <&kp RIGHT>;
+    };
+};
+
+&trackball_listener {
+    raise_arrow_layer {
+        layers = <2>; /* SYM layer */
+        input-processors = <&trackball_keybinds>;
+    };
+};
